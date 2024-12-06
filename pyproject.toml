@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "scuid"
-version = "0.2.0"
+version = "0.3.0"
 description = "scuid is a lightweight Python library for generating collision-resistant IDs optimized for horizontal scaling and high performance. It serves as a slim, alternative implementation of cuid with added flexibility for customization, including support for custom random number generators."
 authors = ["Hieu Lam <lamhieu.vk@gmail.com>"]
 readme = "README.md"
