@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "scuid"
-version = "0.1.0"
+version = "0.2.0"
 description = "scuid is a lightweight Python library for generating collision-resistant IDs optimized for horizontal scaling and high performance. It serves as a slim, alternative implementation of cuid with added flexibility for customization, including support for custom random number generators."
 authors = ["Hieu Lam <lamhieu.vk@gmail.com>"]
 readme = "README.md"
@@ -8,7 +8,6 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 pytest = "^8.3.4"
-
 
 [build-system]
 requires = ["poetry-core"]
@@ -30,3 +29,48 @@ pythonPlatform = "Linux"
 reportGeneralTypeIssues = false
 reportAssignmentType = false
 reportMissingModuleSource = false
+
+[project]
+license = {file = "LICENSE"}
+keywords = [
+  "unique-id", 
+  "scuid", 
+  "identifier", 
+  "uuid", 
+  "slug", 
+  "fingerprint", 
+  "timestamp", 
+  "distributed-systems", 
+  "id-generator", 
+  "lightweight-id", 
+  "base36",
+  "collision-resistant"
+  "horizontal-scaling",
+  "high-performance",
+  "ids-optimized"
+]
+classifiers = [
+    # Intended audience
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+
+    # Topics
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Utilities",
+    "Topic :: System :: Distributed Computing",
+
+    # License
+    "License :: OSI Approved :: MIT License",
+
+    # Supported Python versions
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
