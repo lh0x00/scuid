@@ -14,9 +14,9 @@ Whether you're building distributed systems or need compact, unique identifiers,
 
 ## Why Use scuid?
 
-- **Compact and Unique**: Generates small, collision-resistant IDs suitable for distributed systems.
-- **Customizable**: Supports custom random number generators and configurable options for maximum flexibility.
-- **Lightweight and Fast**: Designed for performance without unnecessary dependencies.
+- **Compact, Unique, and Efficient**: Generates small, collision-resistant IDs suitable for distributed systems. Compared to UUID v4, MD5, SHA1, and other collision-resistant ID generators, the shorter length of scuid IDs reduces the number of characters and tokens used. This makes scuid particularly advantageous for applications like generative AI, where minimizing token usage is often crucial.
+- **Customizable and Flexible**: Supports custom random number generators and configurable options, enabling tailored solutions for a wide range of use cases.
+- **Lightweight and High-Performance**: Designed to deliver fast ID generation without introducing unnecessary dependencies, ensuring optimal performance.
 
 For more information or to contribute, visit the [GitHub repository](https://github.com/lh0x00/scuid).
 
@@ -117,4 +117,4 @@ The tests simulate real-world scenarios with millions of iterations to ensure th
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
