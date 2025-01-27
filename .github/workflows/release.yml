@@ -15,11 +15,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: 📦 Install Poetry
+        uses: abatilo/actions-poetry@v3
+        with:
+          poetry-version: "1.8.4"
       - name: ⚙️ Install Build Tools
         run: >-
           python3 -m pip install build --user
       - name: 🛠️ Build Source and Binary Distributions
-        run: python3 -m build
+        run: poetry build
       - name: 📤 Upload Distribution Artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -34,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/scuid
+      url: https://pypi.org/p/embs
     permissions:
       id-token: write # Mandatory for trusted publishing
     steps:
@@ -93,7 +97,7 @@ jobs:
 
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/scuid
+      url: https://test.pypi.org/p/embs
 
     permissions:
       id-token: write # Mandatory for trusted publishing
